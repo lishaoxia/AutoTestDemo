@@ -1,4 +1,4 @@
 test
 modifyi
 这时在dev分支编辑的
-master分支新增一行
+dev分支新增一行(测试冲突)

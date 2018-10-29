@@ -28,12 +28,12 @@ class Fixtures(unittest.TestCase):
         cls.driver = webdriver.Chrome()
         cls.driver.implicitly_wait(10)
         cls.driver.maximize_window()
-        cls.driver.get('https://www.ztestin.com')
+        cls.driver.get('http://www.ztestin.com')
         cls.driver.find_element_by_css_selector('#qqww > div.zheader > div > ul > li.nav_function > a').click()
 
     @classmethod
     def tearDownClass(cls):
-        cls.driver.close()
+        cls.driver.quit() #close()关闭当前窗口，quit()关闭所有关联窗口
 
     """
     #方法fixture

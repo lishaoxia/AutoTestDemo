@@ -3,7 +3,7 @@ import os
 from email.mime.text import MIMEText
 from email.header import Header
 from email.mime.multipart import MIMEMultipart
-from  email.mime.multipart import MIMEBase
+
 
 #发送邮箱服务器
 smtpserver = 'smtp.exmail.qq.com'
